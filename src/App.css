@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "DM Serif Display";
+  font-weight: 700;
+}
+
+
+.App {
+  /* background-image: url(./image/Hr_hiring.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.logo {
+  width: 50%;
+  height: 50%;
+  padding-bottom: 36px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo_img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.details-container {
+  margin-top: 15px;
+  /* Tạo khoảng cách với dòng tiêu đề bên trên */
+  padding-left: 0;
+  /* Có thể chỉnh lại tùy ý */
+  text-align: left;
+  width: 100%;
+}
+
+.detail-text {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  /* Tăng khoảng cách dòng cho dễ đọc */
+  white-space: pre-line;
+}
+
+.sub-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.overlay::after {
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, .3) 25%, transparent 40%); */
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.inner {
+  position: absolute;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Căn giữa theo chiều ngang và dọc */
+  min-width: 500px;
+  max-height: 80%;
+  border-radius: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7);
+  overflow: hidden auto;
+  padding: 20px 32px;
+}
+
+.inner::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 16px;
+  display: none;
+}
+
+.title {
+  padding: 16px 0;
+  color: rgb(71, 240, 71);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+  font-size: 28px;
+}
+
+.list {
+  text-align: start;
+}
+
+.item {
+  color: rgb(240, 240, 50);
+  font-size: 20px;
+  display: flex;
+  margin-top: 12px;
+}
+
+.content {
+  min-width: 100px;
+  font-size: 24px;
+  border-bottom: 1px dotted rgb(240, 240, 50);
+}
+
+.sub-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.sub-item {
+  display: flex;
+  flex-direction: column;
+  /* Đổi từ hàng ngang sang hàng dọc */
+  align-items: flex-start;
+  /* Căn lề trái */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.sub-item-dev {
+  width: 85px;
+  max-width: 85px;
+}
+
+.link {
+  padding: 24px 0;
+  color: rgb(240, 169, 169);
+  font-size: 1.5rem;
+}
